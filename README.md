@@ -1,2 +1,4 @@
 # SEM-I-2025-ALVARO-CASTRO
 PRACTICA FUNDAMENTOS DE PROGRAMACION UEA
+
+Repositorio creado para envio de tareas
