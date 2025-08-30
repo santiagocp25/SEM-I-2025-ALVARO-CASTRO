@@ -4,6 +4,7 @@ def buscar_en_matriz(matriz, objetivo):
             if valor == objetivo:
                 return True, i, j
     return False, None, None
+
 def main():
     # Definimos la matriz de ejemplo (3×3)
     matriz = [
@@ -15,8 +16,10 @@ def main():
     objetivo = int(input("Introduce el valor a buscar en la matriz: "))
     encontrado, fila, columna = buscar_en_matriz(matriz, objetivo)
     if encontrado:
-        print(f"Valor {objetivo} encontrado en la posición [fila={fila}][columna={columna}].")
+        print(f"Valor {objetivo} encontrado en la posición [fila={fila+1}][columna={columna+1}].")
     else:
-        print(f"Valor {objetivo} no se encontró en la matriz.")
+        print(f"Valor {objetivo} no encontrado en la matriz.")
+
+
 if __name__ == "__main__":
     main()

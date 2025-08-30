@@ -9,9 +9,8 @@ def bubble_sort(arr):
         if not swapped:
             break
 
+
 def ordenar_fila_matriz(matriz, indice_fila):
-
-
     matriz_copia = [fila[:] for fila in matriz]
 
     if 0 <= indice_fila < len(matriz_copia):
@@ -20,12 +19,14 @@ def ordenar_fila_matriz(matriz, indice_fila):
         print(f"Índice de fila inválido: {indice_fila}")
     return matriz_copia
 
+
 def mostrar_matriz(matriz, titulo=None):
     if titulo:
         print(titulo)
     for fila in matriz:
         print(fila)
     print()
+
 
 def main():
     matriz = [
@@ -47,6 +48,7 @@ def main():
 
     print(f"Matriz con la fila {fila_idx} ordenada:")
     mostrar_matriz(nueva_matriz)
+
 
 if __name__ == "__main__":
     main()
