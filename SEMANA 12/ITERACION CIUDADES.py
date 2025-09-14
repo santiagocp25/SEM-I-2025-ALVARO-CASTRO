@@ -1,8 +1,7 @@
 #Matriz de registro de temperaturas
-
 #inicializamos las variables de la matriz
 ciudades = ["Quito","Latacunga","Puyo"]
-semanas = 2
+semanas = 4
 dias = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"]
 
 #inicializamos la matriz temperaturas
@@ -13,17 +12,23 @@ dias = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"]
 temperaturas = [
     [   # Quito
         [17,18,19,16,18,19,15], # Semana 1
-        [16,18,19,20,17,18,19] # Semana 2
+        [16,18,19,20,17,18,19], # Semana 2
+        [19,13,15,17,15,13,19], # Semana 3
+        [17,18,16,15,19,17,18]  # Semana 4
 
     ],
     [   # Latacunga
         [13,15,16,15,14,13,15], # Semana 1
-        [15,16,13,17,16,14,16] # Semana 2
+        [15,16,13,17,16,14,16], # Semana 2
+        [13,12,14,15,14,13,12], # Semana 3
+        [16,15,14,13,17,17,15]  # Semana 4
 
     ],
     [    # Puyo
         [21,19,20,18,19,21,20], # Semana 1
-        [19,18,17,18,19,18,17] # Semana 2
+        [19,18,17,18,19,18,17], # Semana 2
+        [21,19,20,18,18,21,19], # Semana 3
+        [18,18,17,18,17,18,17]  # Semana 4
     ]
 
 ]
@@ -36,4 +41,4 @@ for i, ciudad in enumerate(ciudades):
         for dia in range(len(dias)):
             suma += temperaturas[i][semana][dia]
         promedio = suma/len(dias)
-        print(f"Semana {semana+1}: Promedio = {promedio:.2f} °C")
+        print(f"Semana {semana+1}: Promedio = {promedio:.1f} °C")
